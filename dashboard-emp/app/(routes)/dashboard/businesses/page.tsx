@@ -5,8 +5,14 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
 import { Business } from '@/types'
+import { 
+  Dialog, 
+  DialogTrigger, 
+  DialogContent, 
+  DialogTitle, 
+  DialogHeader 
+} from '@/components/ui/dialog' // Usa los componentes correctos de shadcn/ui
 
 async function getBusinesses(): Promise<Business[]> {
   const res = await fetch('/api/businesses')

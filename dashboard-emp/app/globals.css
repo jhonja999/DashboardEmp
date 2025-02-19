@@ -64,6 +64,7 @@ body {
 
 @layer base {
   * {
+    font-variant-numeric: slashed-zero;
     @apply border-border;
   }
   body {
