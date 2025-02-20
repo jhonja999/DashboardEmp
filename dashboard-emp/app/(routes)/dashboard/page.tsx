@@ -3,6 +3,7 @@ import { CardSummary } from "../components/CardSummary/CardSummary";
 import { BookOpenCheck, UsersRound, Waypoints } from "lucide-react";
 import { LastCustomers } from "../components/LastCustomers";
 
+
 export const dataCardsSummary = [
   {
     icon: UsersRound,
@@ -28,6 +29,7 @@ export const dataCardsSummary = [
 ];
 
 export default function Dashboard() {
+
   return (
     <div>
       <h2 className="text-2xl mb-4">Dashboard</h2>
