@@ -1,4 +1,4 @@
-export const dataGraphicSubscribers = [
+export const dataGraphicSuscribers = [
   { year: "2015", newCustomers: 4000, oldCustomers: 2400 },
 
   { year: "2016", newCustomers: 3000, oldCustomers: 1398 },

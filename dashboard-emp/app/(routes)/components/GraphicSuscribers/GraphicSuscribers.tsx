@@ -9,7 +9,8 @@ import {
   XAxis,
   YAxis
 } from 'recharts';
-import { dataGraphicSubscribers } from "./GraphicSubscribers.data";
+import { dataGraphicSuscribers } from "./GraphicSuscribers.data";
+import { Legend } from "recharts";
 
 export default function GraphicSubscribers() {
   return (
@@ -27,7 +28,7 @@ export default function GraphicSubscribers() {
           <AreaChart
             width={730}
             height={250}
-            data={dataGraphicSubscribers}
+            data={dataGraphicSuscribers}
             margin={{
               top: 10,
               right: 30,
@@ -48,12 +49,14 @@ export default function GraphicSubscribers() {
             <XAxis dataKey="year" />
             <YAxis />
             <Tooltip />
+            <Legend />
             <Area
               type="monotone"
               dataKey="newCustomers"
               stroke="#887CFD"
               fillOpacity={1}
               fill="url(#colorUv)"
+              name="Nuevos Clientes"
             />
             <Area
               type="monotone"
@@ -61,6 +64,7 @@ export default function GraphicSubscribers() {
               stroke="#82ca9d"
               fillOpacity={1}
               fill="url(#colorPv)"
+              name="Viejos Clientes"
             />
           </AreaChart>
         </ResponsiveContainer>

@@ -3,6 +3,7 @@ import { CardSummary } from "../components/CardSummary/CardSummary";
 import { BookOpenCheck, UsersRound, Waypoints } from "lucide-react";
 import { LastCustomers } from "../components/LastCustomers";
 import SalesDistributors from "../components/SalesDistributors/SalesDistributors";
+import { TotalSuscribers } from "../components/TotalSuscribers/TotalSuscribers";
 
 export const dataCardsSummary = [
   {
@@ -48,10 +49,15 @@ export default function Dashboard() {
       </div>
       <div className="grid grid-cols-l mt-12 xl:grid-cols-2 md:gap-x-10">
         <LastCustomers />
-        <div className="mt-5">
+        <div className="mt-2">
           <SalesDistributors />
         </div>
       </div>
+        <div className=" flex-col xl:flex xl:flex-row gap-y-4 md:gap-y-0 mt-12 md:mb-10 justify-center">
+          <TotalSuscribers />
+          <p>List Integrations</p>
+        </div>
+
     </div>
   );
 }
