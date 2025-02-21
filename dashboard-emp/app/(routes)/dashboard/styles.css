@@ -1,0 +1,70 @@
+/* Default layout */
+.default-layout .card-container {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.default-layout .col-span-full {
+  grid-column: span 12 / span 12;
+}
+
+.default-layout .md\:col-span-4 {
+  grid-column: span 4 / span 4;
+}
+
+.default-layout .md\:col-span-6 {
+  grid-column: span 6 / span 6;
+}
+
+.default-layout .lg\:col-span-4 {
+  grid-column: span 4 / span 4;
+}
+
+.default-layout .lg\:col-span-6 {
+  grid-column: span 6 / span 6;
+}
+
+/* Responsive layout */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.swapy-slot {
+  border: 2px dashed #e5e7eb;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: border-color 0.3s ease;
+}
+
+.swapy-slot[data-swapy-draggable="true"] {
+  border-color: #3b82f6; /* Highlight when draggable */
+}
+
+.bg-background {
+  background-color: #ffffff;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.hover\:shadow-md:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.cursor-move {
+  cursor: move;
+}
+
+.ring-2 {
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}

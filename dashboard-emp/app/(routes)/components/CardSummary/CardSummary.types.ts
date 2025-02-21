@@ -1,9 +1,11 @@
 import { LucideIcon } from "lucide-react"
 
-export type CardSummaryProps ={
-    icon: LucideIcon
-    total:string
-    average:number
-    title:string
-    tooltipText:string
-}
+// CardSummary.types.ts
+export interface CardSummaryProps {
+    icon: LucideIcon;
+    total: string;
+    average: number;
+    title: string;
+    tooltipText: string;
+    isDraggable?: boolean;
+  }

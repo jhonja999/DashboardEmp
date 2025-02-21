@@ -49,7 +49,7 @@ export function TotalSuscribers() {
       </div>
 
       {/* Contenedor del gráfico */}
-      <div className="w-full h-64">
+      <div className="w-full h-96">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
             data={dataTotalSuscribers}

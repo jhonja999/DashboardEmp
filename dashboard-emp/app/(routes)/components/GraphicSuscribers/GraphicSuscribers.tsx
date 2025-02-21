@@ -15,6 +15,7 @@ import { Legend } from "recharts";
 export default function GraphicSubscribers() {
   return (
     <div className="mt-5">
+      
       <p className="text-3xl mb-3">24,479</p>
       <div className="flex gap-x-5 mb-5">
         <div className="flex items-center gap-2 px-3 text-md bg-[#16C8C7] text-white rounded-xl w-fit">

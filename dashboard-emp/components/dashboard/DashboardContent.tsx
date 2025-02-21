@@ -26,6 +26,7 @@ export default function DashboardContent({
       <div className="flex-1 flex flex-col overflow-hidden xl:ml-64">
         <Header />
         <Navbar onToggleSidebar={() => setMobileSidebarOpen((prev) => !prev)} />
+          {/* bg de dashboard */}
         <main className="flex-1 overflow-auto p-6 bg-[#1c1c1c] dark:bg-secondary">
           {children}
         </main>
