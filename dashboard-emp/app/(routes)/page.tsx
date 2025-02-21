@@ -1,4 +1,4 @@
-// app/page.tsx
+// app/page.tsx Home, pagina principal
 "use client";
 
 import React from "react";
